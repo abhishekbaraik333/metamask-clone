@@ -12,10 +12,10 @@
 
     <header class="fixed bg-white top-0 w-full z-[1000]">
 
-        <div class="py-2 flex items-center justify-between px-[5%] lg:px-[10%]">
+        <div class="py-4 flex items-center justify-between px-[5%] lg:px-[10%]">
 
             <a class="flex lg:justify-center w-1/2 lg:w-fit" href="./index.html">
-                <img src="./assets/mm-logo.svg" class="lg:w-[500px] md:w-[200px] w-[150px]" alt="">
+                <img src="./assets/mm-logo.svg" class="lg:w-[500px] aspect-auto" alt="">
             </a>
 
             <div class="flex w-1/2 justify-end">
@@ -123,7 +123,6 @@
                         class="bg-blue-600 block hover:bg-blue-700 w-full duration-200 text-base text-white px-6 py-2 rounded-full text-nowrap">Get
                         MetaMask</a>
                 </button>
-
             </nav>
 
             <div>
@@ -141,7 +140,7 @@
 
                             </div>
                             <div class="dropdown">
-                                <div class="h-[20px] bg-transparent">
+                                <div class="h-[10px] bg-transparent">
                                 </div>
                                 <div class="dropdown-items">
                                     <a target="_blank" href="https://portfolio.metamask.io/">
@@ -178,7 +177,7 @@
 
                             </div>
                             <div class="dropdown">
-                                <div class="h-[20px] bg-transparent">
+                                <div class="h-[10px] bg-transparent">
                                 </div>
                                 <div class="dropdown-items">
                                     <a target="_blank" href="https://docs.metamask.io/">
@@ -208,10 +207,9 @@
 
                                     <img src="./assets/dropdown.svg" alt="">
                                 </span>
-
                             </div>
                             <div class="dropdown">
-                                <div class="h-[20px] bg-transparent">
+                                <div class="h-[10px] bg-transparent">
                                 </div>
                                 <div class="dropdown-items">
                                     <a target="_blank" href="https://metamask.io/news/">
@@ -377,11 +375,11 @@
                     class="absolute top-0 left-0 w-full h-full object-cover cursor-pointer rounded-lg" id="thumbnail">
 
                 <!-- Play button overlay -->
-                <div class="absolute inset-0 flex items-center justify-center cursor-pointer rounded-lg" id="play-button">
-                  
+                <div class="absolute inset-0 flex items-center justify-center cursor-pointer rounded-lg"
+                    id="play-button">
+
                     <span class="icon-play relative z-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="28"
-                            viewBox="0 0 23 28" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="28" viewBox="0 0 23 28" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M0.976562 13.7469V25.0549C0.976562 26.6431 2.73876 27.5977 4.0691 26.7301L21.4079 15.4222C22.6178 14.6331 22.6178 12.8608 21.4079 12.0717L4.0691 0.763819C2.73876 -0.103793 0.976562 0.850786 0.976562 2.43904V13.7469Z"
                                 fill="white"></path>
@@ -392,26 +390,167 @@
 
         </section>
 
-        <section class="py-10 bg-[#F7F9FB] px-[5%] lg:px-[15%]">
-            <h3 class="heading text-3xl opacity-80 text-center"><h3 class="heading text-3xl opacity-80 text-center">Your key to blockchain applications
+        <!-- Companies -->
+        <section class="py-10 bg-[#E9EBEE] px-[5%] lg:px-[15%]">
+            <h3 class="heading text-3xl opacity-80 text-center">
+                <h3 class="heading text-3xl opacity-80 text-center">Your key to blockchain applications
+                </h3>
+                <p class="text-center mt-5">
+                    MetaMask is the leading self-custodial wallet. The safe and simple way to access blockchain
+                    applications and web3. Trusted by millions of users worldwide.
+                </p>
+
+                <div class="companies">
+                    <img src="./assets/dapp-aave.webp" alt="Aave">
+                    <img src="./assets/dapp-maker.webp" alt="Maker">
+                    <img src="./assets/dapp-axieinfinity.webp" alt="AxieInfinity">
+                    <img src="./assets/dapp-opensea.webp" alt="OpenSea">
+                    <img src="./assets/dapp-compound.webp" alt="Compound">
+                    <img src="./assets/dapp-rarible.webp" alt="Rarible">
+                    <img src="./assets/dapp-gitcoin.webp" alt="gitcoin">
+                    <img src="./assets/dapp-uniswap.webp" alt="Uniswap">
+                </div>
+        </section>
+
+        <!-- Developers -->
+        <section class="py-10 bg-[#24292E] px-[5%] lg:px-[15%]">
+            <h3 class="heading text-3xl text-white text-center">
+                Developers
             </h3>
-            <p class="text-center mt-5">
-                MetaMask is the leading self-custodial wallet. The safe and simple way to access blockchain applications and web3. Trusted by millions of users worldwide.
+            <p class="text-center mt-5 text-white text-sm">
+                MetaMask is powered by a strong community from across the globe. Interested in contributing? Find out
+                how and what to contribute using the resources below.
             </p>
 
-            <div class="companies">
-                <img src="./assets/dapp-aave.webp" alt="Aave">
-                <img src="./assets/dapp-maker.webp" alt="Maker">
-                <img src="./assets/dapp-axieinfinity.webp" alt="AxieInfinity">
-                <img src="./assets/dapp-opensea.webp" alt="OpenSea">
-                <img src="./assets/dapp-compound.webp" alt="Compound">
-                <img src="./assets/dapp-rarible.webp" alt="Rarible">
-                <img src="./assets/dapp-gitcoin.webp" alt="gitcoin">
-                <img src="./assets/dapp-uniswap.webp" alt="Uniswap">
+            <div class="dev-links flex flex-col text-white gap-10 justify-center items-center mt-10">
+                <a href="https://docs.metamask.io/">Documentation ></a>
+                <a href="https://metamask.io/developer/">Developer Suite ></a>
+                <a
+                    href="https://github.com/MetaMask/metamask-extension/blob/739b5dfe72dad93f97603a22e61632a2ae872c84/.github/CONTRIBUTING.md">Contributing
+                    Guidelines ></a>
             </div>
         </section>
 
+        <!-- Shop Hoodie -->
+        <section class="py-10 bg-[#6A737D] px-[5%] lg:px-[15%]">
+            <div class="flex flex-col lg:flex-row items-center justify-center gap-5">
+                <h3 class="heading lg:hidden text-3xl text-white text-center">
+                    Shop MetaMask Swag
+                </h3>
+                <img src="./assets/mm-shop-hoodie.webp" class="w-[400px]" alt="Shop Hoodie">
+                <div class="flex flex-col items-start gap-20">
+                    <h3 class="heading hidden lg:block text-3xl text-white text-center">
+                        Shop MetaMask Swag
+                    </h3>
+                    <button class="">
+                        <a href="" class=" py-3 px-10 rounded-full border-zinc-200 border text-zinc-200 hover:border-blue-500 hover:text-blue-500 duration-200 text-lg">Shop Now</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Receive our Newsletter -->
+        <section class="py-10  px-[5%] lg:px-[15%]">
+            <h3 class="heading text-3xl text-black opacity-80 text-center">
+                Receive our Newsletter
+            </h3>
+            <p class="text-center mt-5 text-black text-sm">
+                Sign up to receive updates and announcements
+            </p>
+            <button class=" mt-6 flex justify-center w-full">
+                <a target="_blank" href="https://metamask.io/download/"
+                    class="bg-blue-600 block hover:bg-blue-700 duration-200 text-white px-6 py-2 rounded-full text-nowrap">Sign up</a>
+            </button>
+        </section>
     </main>
+
+    <footer class="py-10 bg-[#E9EBEE] px-[5%] lg:px-[15%]">
+        <div>
+            <a class="flex lg:justify-center w-1/2 lg:w-fit" href="./index.html">
+                <img src="./assets/mm-logo.svg" class="lg:w-[200px] md:w-[200px] w-[170px]" alt="">
+            </a>
+        </div>
+        <div class="footer-grid mt-10 grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-20">
+
+        <div class="w-fit">
+            <h3 class=" text-lg text-[#F6851B] opacity-80 mb-3">
+               LEARN MORE
+            </h3>
+            <ul class="footer-links">
+                <li>
+                    <a href="https://metamask.io/about/">About</a>
+                </li>
+                <li>
+                    <a href="https://metamask.io/developer/">Developers</a>
+                </li>
+                <li>
+                    <a href="https://metamask.io/download/">Download</a>
+                </li>
+                <li>
+                    <a href="https://metamask.io/institutions/">MetaMask Institutional</a>
+                </li>
+                <li>
+                    <a href="https://metamask.io/news/">News</a>
+                </li>
+                <li>
+                    <a href="https://metamask.io/security/">Security</a>
+                </li>
+
+            </ul>
+        </div>
+       
+
+        <div class="w-fit">
+            <h3 class=" text-lg text-[#F6851B] opacity-80 mb-3">
+                GET INVOLVED
+            </h3>
+            <ul class="footer-links">
+                <li>
+                    <a href="https://github.com/MetaMask/metamask-extension/">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://gitcoin.co/">Gitcoin</a>
+                </li>
+                <li>
+                    <a href="https://consensys.io/open-roles/?discipline=32543">Open Positions</a>
+                </li>
+                <li>
+                    <a href="https://shop.spreadshirt.com/metamask/">Swag Shop</a>
+                </li>
+                <li>
+                    <a href="https://consensys.io/contact">Press & Partnerships</a>
+                </li>
+            
+            </ul>
+        </div>
+
+        <div class="w-fit">
+            <h3 class=" text-lg text-[#F6851B] opacity-80 mb-3">
+               LEGAL
+            </h3>
+            <ul class="footer-links">
+                <li>
+                    <a href="https://consensys.io/privacy-notice">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="https://metamask.io/terms-of-use/">Terms of Use</a>
+                </li>
+                <li>
+                    <a href="https://metamask.io/cla/">Contributor License Agreement</a>
+                </li>
+                <li>
+                    <a href="https://metamask.io/sitemap/">Site Map</a>
+                </li>
+               
+            </ul>
+        </div>
+
+    </div>
+        <div class="w-full mt-5">
+            <p class="text-[13px] w-full">©2024 MetaMask • A Consensys Formation</p>
+        </div>
+
+    </footer>   
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -430,16 +569,16 @@
         });
 
         document.getElementById("video-container").addEventListener("click", function () {
-                    const videoIframe = document.createElement("iframe");
-                    videoIframe.src = "https://www.youtube.com/embed/YVgfHZMFFFQ?autoplay=1";
-                    videoIframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
-                    videoIframe.setAttribute("allowfullscreen", "");
-                    videoIframe.classList.add("absolute", "top-0", "left-0", "w-full", "h-full","rounded-lg");
+            const videoIframe = document.createElement("iframe");
+            videoIframe.src = "https://www.youtube.com/embed/YVgfHZMFFFQ?autoplay=1";
+            videoIframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+            videoIframe.setAttribute("allowfullscreen", "");
+            videoIframe.classList.add("absolute", "top-0", "left-0", "w-full", "h-full", "rounded-lg");
 
-                    // Replace the placeholder with the actual video iframe
-                    document.getElementById("video-container").innerHTML = "";
-                    document.getElementById("video-container").appendChild(videoIframe);
-                });
+            // Replace the placeholder with the actual video iframe
+            document.getElementById("video-container").innerHTML = "";
+            document.getElementById("video-container").appendChild(videoIframe);
+        });
 
         function toggleDropdown(id) {
             // Get all dropdown contents and icons

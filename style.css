@@ -45,7 +45,6 @@
 .dropdown {
   width: fit-content;
   position: absolute;
-  padding: 10px;
   margin: 0;
   top: 100%;
   right: -60px;
@@ -117,8 +116,28 @@
   columns: 200px;
 }
 
+.dev-links a:hover{
+  color: #037DD5;
+}
+
+.footer-links{
+  font-size: 13px;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a:hover{
+  color: #037DD5;
+}
+
 @media (max-width:640px) {
   .companies{
     columns: 150px;
+  }
+
+  .footer-links{
+    font-size: 16px;
   }
 }
