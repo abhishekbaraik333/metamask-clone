@@ -306,11 +306,11 @@
                 </p>
 
                 <div class=" justify-center mt-5 flex  lg:hidden ">
-                <button type="submit"
-                    class="bg-blue-600 hover:bg-blue-700 duration-200 text-sm text-white px-6 py-2 rounded-full text-nowrap block">Subscribe</button>
+                    <button type="submit"
+                        class="bg-blue-600 hover:bg-blue-700 duration-200 text-sm text-white px-6 py-2 rounded-full text-nowrap block">Subscribe</button>
                 </div>
 
-            </form>
+                </form>
 
             </div>
         </section>
@@ -323,7 +323,8 @@
                         Your web3 wallet
                     </h3>
                     <p class="opacity-80 lg:text-start text-center mt-3">
-                        Available as a browser extension and as a mobile app, MetaMask equips you with a key vault, secure login, token wallet, and more—everything you need to manage your digital assets.
+                        Available as a browser extension and as a mobile app, MetaMask equips you with a key vault,
+                        secure login, token wallet, and more—everything you need to manage your digital assets.
                     </p>
                 </div>
                 <div class="lg:w-1/2">
@@ -332,7 +333,7 @@
             </div>
 
             <div class="flex flex-col-reverse lg:flex-row items-center gap-16 py-20">
-               
+
                 <div class="lg:w-1/2">
                     <img src="./assets/Explore-illo.svg" class="aspect-auto" alt="Your Web3 Wallet">
                 </div>
@@ -341,7 +342,8 @@
                         Explore blockchain apps
                     </h3>
                     <p class="opacity-80 lg:text-start text-center mt-3">
-                        MetaMask provides a simple and secure way to connect to blockchain-based applications. You are always in control when interacting on the new decentralized web.
+                        MetaMask provides a simple and secure way to connect to blockchain-based applications. You are
+                        always in control when interacting on the new decentralized web.
                     </p>
                 </div>
             </div>
@@ -352,7 +354,8 @@
                         Own your data
                     </h3>
                     <p class="opacity-80 lg:text-start text-center mt-3">
-                        MetaMask generates passwords and keys on your device, so only you have access to your accounts and data. You always choose what to share and what to keep private.
+                        MetaMask generates passwords and keys on your device, so only you have access to your accounts
+                        and data. You always choose what to share and what to keep private.
                     </p>
                 </div>
                 <div class="lg:w-1/2">
@@ -363,6 +366,51 @@
         </section>
 
         <!-- What is metamask -->
+        <section class="py-20  px-[5%] lg:px-[15%]">
+
+            <h3 class="heading text-3xl opacity-80 text-center py-10">What is MetaMask?
+            </h3>
+
+            <div id="video-container" class="relative w-full h-0 rounded-lg" style="padding-bottom: 56.25%;">
+                <!-- Placeholder image or play button overlay -->
+                <img src="https://img.youtube.com/vi/YVgfHZMFFFQ/0.jpg" alt="Video Thumbnail"
+                    class="absolute top-0 left-0 w-full h-full object-cover cursor-pointer rounded-lg" id="thumbnail">
+
+                <!-- Play button overlay -->
+                <div class="absolute inset-0 flex items-center justify-center cursor-pointer rounded-lg" id="play-button">
+                  
+                    <span class="icon-play relative z-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="28"
+                            viewBox="0 0 23 28" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.976562 13.7469V25.0549C0.976562 26.6431 2.73876 27.5977 4.0691 26.7301L21.4079 15.4222C22.6178 14.6331 22.6178 12.8608 21.4079 12.0717L4.0691 0.763819C2.73876 -0.103793 0.976562 0.850786 0.976562 2.43904V13.7469Z"
+                                fill="white"></path>
+                        </svg></span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="py-10 bg-[#F7F9FB] px-[5%] lg:px-[15%]">
+            <h3 class="heading text-3xl opacity-80 text-center"><h3 class="heading text-3xl opacity-80 text-center">Your key to blockchain applications
+            </h3>
+            <p class="text-center mt-5">
+                MetaMask is the leading self-custodial wallet. The safe and simple way to access blockchain applications and web3. Trusted by millions of users worldwide.
+            </p>
+
+            <div class="companies">
+                <img src="./assets/dapp-aave.webp" alt="Aave">
+                <img src="./assets/dapp-maker.webp" alt="Maker">
+                <img src="./assets/dapp-axieinfinity.webp" alt="AxieInfinity">
+                <img src="./assets/dapp-opensea.webp" alt="OpenSea">
+                <img src="./assets/dapp-compound.webp" alt="Compound">
+                <img src="./assets/dapp-rarible.webp" alt="Rarible">
+                <img src="./assets/dapp-gitcoin.webp" alt="gitcoin">
+                <img src="./assets/dapp-uniswap.webp" alt="Uniswap">
+            </div>
+        </section>
+
     </main>
 
     <script>
@@ -380,6 +428,18 @@
                 mobileNav.classList.toggle("active");
             });
         });
+
+        document.getElementById("video-container").addEventListener("click", function () {
+                    const videoIframe = document.createElement("iframe");
+                    videoIframe.src = "https://www.youtube.com/embed/YVgfHZMFFFQ?autoplay=1";
+                    videoIframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+                    videoIframe.setAttribute("allowfullscreen", "");
+                    videoIframe.classList.add("absolute", "top-0", "left-0", "w-full", "h-full","rounded-lg");
+
+                    // Replace the placeholder with the actual video iframe
+                    document.getElementById("video-container").innerHTML = "";
+                    document.getElementById("video-container").appendChild(videoIframe);
+                });
 
         function toggleDropdown(id) {
             // Get all dropdown contents and icons

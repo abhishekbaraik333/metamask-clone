@@ -558,13 +558,25 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
 }
 
 .inset-x-0 {
   left: 0px;
   right: 0px;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .top-0 {
@@ -632,6 +644,10 @@ video {
   aspect-ratio: auto;
 }
 
+.h-0 {
+  height: 0px;
+}
+
 .h-0\.5 {
   height: 0.125rem;
 }
@@ -646,6 +662,10 @@ video {
 
 .h-\[50\%\] {
   height: 50%;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-1\/2 {
@@ -729,6 +749,10 @@ video {
   gap: 3rem;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -737,20 +761,8 @@ video {
   gap: 0.75rem;
 }
 
-.gap-32 {
-  gap: 8rem;
-}
-
 .gap-5 {
   gap: 1.25rem;
-}
-
-.gap-20 {
-  gap: 5rem;
-}
-
-.gap-16 {
-  gap: 4rem;
 }
 
 .text-nowrap {
@@ -759,6 +771,10 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-md {
@@ -796,6 +812,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-2 {
@@ -841,6 +862,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -849,11 +875,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .pt-5 {
@@ -1046,6 +1067,33 @@ video {
 .nav-item{
   font-family: "Euclid-regular";
   font-weight: 500;
+}
+
+.icon-play {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(3, 125, 214);
+  transition: background 200ms;
+  border-radius: 100%;
+}
+
+.icon-play:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.companies{
+  -moz-columns: 200px;
+       columns: 200px;
+}
+
+@media (max-width:640px) {
+  .companies{
+    -moz-columns: 150px;
+         columns: 150px;
+  }
 }
 
 .hover\:bg-blue-700:hover {

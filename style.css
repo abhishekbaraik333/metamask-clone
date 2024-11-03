@@ -95,3 +95,30 @@
   font-family: "Euclid-regular";
   font-weight: 500;
 }
+
+.icon-play {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background: rgb(3, 125, 214);
+  transition: background 200ms;
+  border-radius: 100%;
+}
+
+.icon-play:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.companies{
+  columns: 200px;
+}
+
+@media (max-width:640px) {
+  .companies{
+    columns: 150px;
+  }
+}
