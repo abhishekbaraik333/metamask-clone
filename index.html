@@ -10,7 +10,7 @@
 
 <body>
 
-    <header class="fixed top-0 w-full z-[1000]">
+    <header class="fixed bg-white top-0 w-full z-[1000]">
 
         <div class="py-2 flex items-center justify-between px-[5%] lg:px-[10%]">
 
@@ -275,17 +275,43 @@
         </section>
 
         <!-- newsletter section -->
-        <section class="py-10 bg-[#F7F9FB]">
-            <div class="w-1/3 mx-auto">
+        <section class="py-10 bg-[#F7F9FB] px-[5%] mt-32">
+            <div class="lg:w-[25%] mx-auto">
                 <h3 class="heading text-3xl opacity-80 text-center">Receive our newsletter
                 </h3>
 
-                <p class="opacity-80 text-center mt-5">Sign up for our newsletter to learn more about MetaMask and the benefits of web3
+                <p class="opacity-80 text-center mt-3">Sign up for our newsletter to learn more about MetaMask and the
+                    benefits of web3
                 </p>
-                <div>
-                    <input type="text">
-                    <button>Subscribe</button>
+                <div class="py-5">
+                    <form action="POST">
+                        <div class="flex items-center gap-2">
+                            <input type="text" placeholder="Email Address"
+                                class="rounded-full py-2 px-5 border border-blue-200 w-full lg:w-fit">
+                            <button type="submit"
+                                class="bg-blue-600 hover:bg-blue-700 duration-200 text-sm text-white px-6 py-2 rounded-full text-nowrap hidden lg:block">Subscribe</button>
+                        </div>
                 </div>
+                <p class="text-xs text-center opacity-80">
+                    MetaMask may use the contact information you provide to us to contact you about our products and
+                    services. By clicking “subscribe” you consent to receive such communications. You may unsubscribe
+                    from these communications at any time. For information on how to unsubscribe, as well as our privacy
+                    practices and commitment to protecting your privacy, please review our <a class="text-blue-500"
+                        target="_blank" href="https://consensys.io/privacy-notice">Privacy Policy.
+                    </a> <br> <br>
+                    This site is protected by reCAPTCHA and the Google <a target="_blank" class="text-blue-500"
+                        href="https://policies.google.com/privacy">Privacy Policy</a> and <a class="text-blue-500"
+                        href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+
+                </p>
+
+                <div class=" justify-center mt-5 flex  lg:hidden ">
+                <button type="submit"
+                    class="bg-blue-600 hover:bg-blue-700 duration-200 text-sm text-white px-6 py-2 rounded-full text-nowrap block">Subscribe</button>
+                </div>
+
+            </form>
+
             </div>
         </section>
     </main>
