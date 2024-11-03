@@ -88,7 +88,7 @@ gsap.from(".data-image", {
 
 gsap.from(".explore", {
   scrollTrigger: {
-    trigger: ".web3", // Element that triggers the animation
+    trigger: ".explore", // Element that triggers the animation
   },
   x: 100, // Moves the element vertically by 100 pixels
   opacity: 0, // Starts with opacity 0
