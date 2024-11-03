@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Euclid-regular;
+  src: url(./assets/EuclidCircularB-Regular-WebXL.woff2);
+}
+
+@font-face {
+  font-family: Euclid-bold;
+  src: url(./assets/EuclidCircularB-Bold-WebXL.woff2);
+}
+
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: "Euclid-regular",sans-serif;
+}
+
+.heading{
+  font-family: "Euclid-bold",sans-serif;
+}  
+
+  /* #hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  
+  #hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  } */
+
+  #hamburger.active{
+    background-color: #d0d6da;
+  }
+  
+  #mobile-nav.active {
+    transform: translateX(0);
+  }
+
+.dropdown {
+  width: fit-content;
+  position: absolute;
+  padding: 10px;
+  margin: 0;
+  top: 100%;
+  right: -60px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000; /* Ensure dropdown appears above other elements */
+}
+
+.dropdown-items {
+  position: relative;
+  z-index: 999;
+  backdrop-filter: blur(6px);
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.28) 0px 0px 13px 0px;
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border-radius: 12px;
+  padding: 5px;
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 20px 0px; */
+}
+
+.dropdown-items a {
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  white-space: nowrap;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdown-items a:hover{
+  background: #97bad387;
+  color: #037DD5;
+}
+
+/* Apply the hover on .all-pages and make the dropdown visible */
+.all-pages:hover + .dropdown,
+.dropdown:hover,
+.dropdown-items a:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-item{
+  font-family: "Euclid-regular";
+  font-weight: 500;
+}
