@@ -745,6 +745,14 @@ video {
   gap: 1.25rem;
 }
 
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-16 {
+  gap: 4rem;
+}
+
 .text-nowrap {
   text-wrap: nowrap;
 }
