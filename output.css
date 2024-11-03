@@ -1177,6 +1177,15 @@ video {
   color: #037DD5;
 }
 
+#play-button{
+  background-color: #0000008d;
+  transition: all 0.3s ease;
+}
+
+#play-button:hover{
+  background-color: #00000044;
+}
+
 @media (max-width:640px) {
   .companies{
     -moz-columns: 150px;
@@ -1297,9 +1306,5 @@ video {
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-\[13px\] {
-    font-size: 13px;
   }
 }

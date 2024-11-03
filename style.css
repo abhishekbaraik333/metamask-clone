@@ -132,6 +132,16 @@
   color: #037DD5;
 }
 
+#play-button{
+  background-color: #0000008d;
+  transition: all 0.3s ease;
+}
+
+#play-button:hover{
+  background-color: #00000044;
+
+}
+
 @media (max-width:640px) {
   .companies{
     columns: 150px;
