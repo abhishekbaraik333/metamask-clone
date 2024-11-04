@@ -104,3 +104,4 @@ gsap.from(".explore-image", {
   duration: 1, // Animation duration
 });
 
+
