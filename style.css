@@ -158,12 +158,12 @@ html,body{
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  color: #fff;
+  color: #000;
   padding: 40px;
 }
 
 .swiper-pagination-bullet-active{
-  background: white !important;
+  background: black !important;
 }
 
 /* Hide the default checkbox */
