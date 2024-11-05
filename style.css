@@ -18,6 +18,12 @@
     font-family: "Euclid-regular",sans-serif;
 }
 
+html,body{
+  height: 100%;
+  width: 100%;
+
+}
+
 .heading{
   font-family: "Euclid-bold",sans-serif;
 }  
@@ -141,6 +147,78 @@
   background-color: #00000044;
 
 }
+
+.swiper-container {
+  width: 100%;
+  height: 70%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #fff;
+  padding: 40px;
+}
+
+.swiper-pagination-bullet-active{
+  background: white !important;
+}
+
+/* Hide the default checkbox */
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the checkmark */
+.custom-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 2px solid gray;
+}
+
+/* Change color when checked */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #2563EB;
+}
+
+/* Tick mark */
+.custom-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  opacity: 0;
+  transform: rotate(45deg);
+  transition: opacity 0.1s;
+}
+
+/* Show tick mark when checked */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+  opacity: 1;
+}
+
+.import-btn:hover {
+  box-shadow: 0 2px 8px 0 #43aefc33;
+}
+
+.improve-ul li{
+  display: flex;
+  gap: 3px;
+  margin-bottom: 10px;
+}
+
 
 @media (max-width:640px) {
   .companies{

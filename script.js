@@ -52,6 +52,8 @@ function toggleDropdown(id) {
   });
 }
 
+
+
 gsap.from(".web3", {
   scrollTrigger: {
     trigger: ".web3", // Element that triggers the animation
